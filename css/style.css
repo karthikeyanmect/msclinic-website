@@ -3,8 +3,8 @@
    no decorative motifs. Outfit headings + Hind Madurai body (Tamil-safe). */
 
 :root {
-  --navy: #12283E;
-  --navy-2: #0D1F31;
+  --navy: #2B2360;
+  --navy-2: #201A4C;
   --teal: #0E8074;
   --teal-deep: #0A6259;
   --teal-tint: #E6F4F2;
@@ -27,8 +27,8 @@
   --font-body: 'Hind Madurai', 'Noto Sans Tamil', system-ui, sans-serif;
   --radius: 12px;
   --radius-lg: 16px;
-  --shadow-sm: 0 2px 10px rgba(18, 40, 62, 0.06);
-  --shadow: 0 16px 40px rgba(18, 40, 62, 0.12);
+  --shadow-sm: 0 2px 10px rgba(32, 26, 76, 0.06);
+  --shadow: 0 16px 40px rgba(32, 26, 76, 0.12);
   --container: 1200px;
 }
 
@@ -132,7 +132,7 @@ h3 { font-size: 18px; font-weight: 700; letter-spacing: -0.01em; }
 
 /* ---------- Hero (wide, dark, mission-led) ---------- */
 .hero {
-  background: linear-gradient(160deg, var(--navy) 12%, #14324A 55%, #0F5B54 130%);
+  background: linear-gradient(160deg, var(--navy-2) 8%, #332A73 55%, #0F5B54 135%);
   color: var(--on-dark);
   padding: 84px 0 88px;
 }
@@ -343,7 +343,7 @@ h3 { font-size: 18px; font-weight: 700; letter-spacing: -0.01em; }
   position: fixed; left: 0; right: 0; bottom: 0; z-index: 70;
   background: rgba(255, 255, 255, 0.97);
   border-top: 1px solid var(--line);
-  box-shadow: 0 -8px 30px rgba(18, 40, 62, 0.12);
+  box-shadow: 0 -8px 30px rgba(32, 26, 76, 0.12);
   padding: 10px 14px calc(10px + env(safe-area-inset-bottom));
   grid-template-columns: repeat(3, 1fr); gap: 10px;
 }
