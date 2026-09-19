@@ -1,0 +1,124 @@
+/* MS Psychiatry Clinic — MTC ERP re-skin
+   Same layout/markup as the main site (css/style.css); this sheet only
+   swaps the theme: electric-indigo accents, glass cards, mono tech accents.
+   html[data-theme="dark"] = ERP Dark, html[data-theme="light"] = ERP Light. */
+
+/* ---------- Tokens: ERP Dark ---------- */
+html[data-theme="dark"] {
+  --navy: #0F172A;
+  --navy-2: #020617;
+  --teal: #6366f1;
+  --teal-deep: #A5B4FC;
+  --teal-tint: rgba(99, 102, 241, 0.14);
+  --page: #020617;
+  --alt: #0B1120;
+  --ink: #F8FAFC;
+  --body: #B3C0D4;
+  --muted: #8494AB;
+  --line: rgba(255, 255, 255, 0.08);
+  --line-dark: rgba(255, 255, 255, 0.12);
+  --on-dark: #F8FAFC;
+  --on-dark-muted: #94A3B8;
+  --green-tint: rgba(34, 197, 94, 0.16);
+  --shadow-sm: 0 2px 10px rgba(0, 0, 0, 0.5);
+  --shadow: 0 16px 40px rgba(0, 0, 0, 0.55);
+  --erp-accent-soft: #818CF8;
+  --erp-glass: rgba(255, 255, 255, 0.03);
+  --erp-glass-hover: rgba(255, 255, 255, 0.06);
+}
+
+/* ---------- Tokens: ERP Light ---------- */
+html[data-theme="light"] {
+  --navy: #0F172A;
+  --navy-2: #0B1120;
+  --teal: #6366f1;
+  --teal-deep: #4f46e5;
+  --teal-tint: rgba(99, 102, 241, 0.1);
+  --page: #FFFFFF;
+  --alt: #F1F5F9;
+  --ink: #0F172A;
+  --body: #475569;
+  --muted: #64748B;
+  --line: #E2E8F0;
+  --green-tint: rgba(22, 163, 74, 0.12);
+  --shadow-sm: 0 2px 10px rgba(15, 23, 42, 0.06);
+  --shadow: 0 16px 40px rgba(15, 23, 42, 0.12);
+  --erp-accent-soft: #4f46e5;
+  --erp-glass: #FFFFFF;
+  --erp-glass-hover: #F8FAFC;
+}
+
+/* ---------- ERP signatures (both themes) ---------- */
+html[data-theme] .eyebrow,
+html[data-theme] .stat-value {
+  font-family: 'JetBrains Mono', 'Outfit', monospace;
+}
+html[data-theme] .eyebrow { letter-spacing: 0.14em; font-weight: 600; }
+html[data-theme] .stat-value { font-weight: 700; letter-spacing: -0.01em; }
+html[data-theme] .btn-primary { box-shadow: 0 6px 18px rgba(99, 102, 241, 0.35); }
+html[data-theme] .btn-primary:hover { background: #4f46e5; }
+html[data-theme] .btn:focus-visible,
+html[data-theme] .tab:focus-visible { outline-color: var(--erp-accent-soft); }
+html[data-theme] .hero-copy h1 .accent { color: var(--erp-accent-soft); }
+html[data-theme] .why-card svg { color: var(--erp-accent-soft); }
+html[data-theme] .journey-step .step-num { background: var(--teal); }
+html[data-theme] .condition-card:hover { border-color: rgba(99, 102, 241, 0.5); }
+html[data-theme] .faq details[open] { border-color: rgba(99, 102, 241, 0.5); }
+html[data-theme] .online-strip { border-color: rgba(99, 102, 241, 0.35); }
+html[data-theme] .doctor-points li::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M6 12.5l4 4 8-9' stroke='%236366f1' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+
+/* ---------- ERP Dark: surfaces & literals ---------- */
+html[data-theme="dark"] body { background: var(--page); }
+html[data-theme="dark"] .site-header {
+  background: rgba(2, 6, 23, 0.85);
+  border-bottom-color: var(--line);
+}
+html[data-theme="dark"] .mobile-nav { background: #020617; }
+html[data-theme="dark"] .hero {
+  background: radial-gradient(900px 480px at 80% -10%, rgba(99, 102, 241, 0.25), transparent 60%), #020617;
+}
+html[data-theme="dark"] .eyebrow-light { color: #A5B4FC; }
+html[data-theme="dark"] .hero-card-photo {
+  background: #0F172A;
+  border: 1px solid var(--line);
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.6);
+}
+html[data-theme="dark"] .hero-badge {
+  background: #0F172A; color: #F8FAFC;
+  border: 1px solid var(--line-dark);
+}
+html[data-theme="dark"] .stat-value { color: #F8FAFC; }
+html[data-theme="dark"] .condition-card,
+html[data-theme="dark"] .journey-step,
+html[data-theme="dark"] .review-card,
+html[data-theme="dark"] .faq details,
+html[data-theme="dark"] .timing-table { background: var(--erp-glass); }
+html[data-theme="dark"] .condition-card:hover { background: var(--erp-glass-hover); }
+html[data-theme="dark"] .section-dark { background: #0B1120; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+html[data-theme="dark"] .doctor-photo-wrap figcaption { background: rgba(2, 6, 23, 0.85); color: #F8FAFC; }
+html[data-theme="dark"] .about-mission { color: #C7D2FE; }
+html[data-theme="dark"] .btn-outline { background: transparent; color: #A5B4FC; border-color: rgba(99, 102, 241, 0.6); }
+html[data-theme="dark"] .btn-outline:hover { background: rgba(99, 102, 241, 0.12); }
+html[data-theme="dark"] .bottom-cta { background: linear-gradient(150deg, #020617 10%, #312E81 140%); }
+html[data-theme="dark"] .action-bar { background: rgba(2, 6, 23, 0.95); border-top-color: var(--line); }
+html[data-theme="dark"] .action-map { background: rgba(255, 255, 255, 0.08); color: #E2E8F0; }
+html[data-theme="dark"] .design-pill { background: rgba(15, 23, 42, 0.92) !important; border-color: rgba(255, 255, 255, 0.12) !important; }
+
+/* ---------- ERP Light: hero goes light with indigo glow ---------- */
+html[data-theme="light"] .hero {
+  background: radial-gradient(900px 480px at 80% -10%, rgba(99, 102, 241, 0.16), transparent 60%), #F8FAFC;
+  border-bottom: 1px solid var(--line);
+}
+html[data-theme="light"] .hero-copy h1 { color: #0F172A; }
+html[data-theme="light"] .hero .eyebrow-light { color: #4f46e5; }
+html[data-theme="light"] .hero-mission { color: #475569; }
+html[data-theme="light"] .hero-mission strong { color: #0F172A; }
+html[data-theme="light"] .trust-row { color: #475569; }
+html[data-theme="light"] .trust-row strong { color: #0F172A; }
+html[data-theme="light"] .hero .btn-ghost-light { color: #0F172A; border-color: #CBD5E1; }
+html[data-theme="light"] .hero .btn-ghost-light:hover { background: rgba(15, 23, 42, 0.05); border-color: #94A3B8; }
+html[data-theme="light"] .hero-card-photo { border: 1px solid var(--line); }
+html[data-theme="light"] .hero-badge { border: 1px solid var(--line); }
+html[data-theme="light"] .bottom-cta { background: linear-gradient(150deg, #0F172A 20%, #312E81 140%); }
