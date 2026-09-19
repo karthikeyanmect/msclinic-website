@@ -255,3 +255,9 @@ h3 { font-size: 17px; letter-spacing: -0.02em; }
   .journey { grid-template-columns: 1fr; }
   .hero-ctas .btn { width: 100%; }
 }
+
+/* Hero photo pair: portrait main, clinic side */
+@media (max-width: 960px) {
+  .hero .container[style*="grid-template-columns"] { display: flex !important; flex-direction: column; }
+  .hero-side { display: none; }
+}
