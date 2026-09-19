@@ -575,3 +575,8 @@ h3 { font-size: 19px; font-weight: 700; }
   box-shadow: var(--shadow);
 }
 @media (max-width: 980px) { .doctor-photo { width: 120px; height: 120px; } }
+
+/* Keep design-preview pill clear of the mobile action bar */
+@media (max-width: 640px) {
+  .design-pill { bottom: 86px !important; }
+}
