@@ -580,3 +580,13 @@ h3 { font-size: 19px; font-weight: 700; }
 @media (max-width: 640px) {
   .design-pill { bottom: 86px !important; }
 }
+
+/* Mobile: symmetric backdrop arch so the portrait composition stays centered */
+@media (max-width: 980px) {
+  .hero-photo::before {
+    inset: -12px;
+    width: auto; height: auto;
+    transform: none;
+    border-radius: 320px 320px 30px 30px;
+  }
+}
