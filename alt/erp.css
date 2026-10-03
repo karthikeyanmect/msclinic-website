@@ -122,3 +122,11 @@ html[data-theme="light"] .hero .btn-ghost-light:hover { background: rgba(15, 23,
 html[data-theme="light"] .hero-card-photo { border: 1px solid var(--line); }
 html[data-theme="light"] .hero-badge { border: 1px solid var(--line); }
 html[data-theme="light"] .bottom-cta { background: linear-gradient(150deg, #0F172A 20%, #312E81 140%); }
+
+/* ---------- Kural band / new components (ERP themes) ---------- */
+html[data-theme="dark"] .kural-band { background: linear-gradient(140deg, #0B1120 25%, #312E81 140%); }
+html[data-theme="light"] .kural-band { background: linear-gradient(140deg, #0F172A 25%, #4338CA 140%); }
+html[data-theme] .kural-cite { color: var(--erp-accent-soft); }
+html[data-theme="dark"] .hero-light-quote { color: #A5B4FC; }
+html[data-theme="light"] .hero-light-quote { color: #4f46e5; }
+html[data-theme="dark"] .doctor-journey li::before { border-color: var(--alt); }
