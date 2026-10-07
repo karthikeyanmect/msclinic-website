@@ -403,11 +403,6 @@ h3 { font-size: 18px; font-weight: 700; letter-spacing: -0.01em; }
 
 /* ---------- About ---------- */
 .about-grid { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 56px; align-items: start; }
-.about-mission {
-  font-family: var(--font-display); font-size: 22px; font-weight: 600; line-height: 1.45;
-  color: var(--navy); margin: 10px 0 0;
-  border-left: 4px solid var(--teal); padding-left: 22px;
-}
 .about-copy p { margin: 0 0 16px; color: var(--body); font-size: 16px; }
 .about-photo { margin: 22px 0 0; }
 .about-photo img { width: 100%; height: 240px; object-fit: cover; border-radius: var(--radius); }
@@ -434,12 +429,12 @@ h3 { font-size: 18px; font-weight: 700; letter-spacing: -0.01em; }
 }
 
 /* ---------- About word row ---------- */
-.word-row { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; padding: 0; margin: 2px 0 6px; }
+.word-row { display: flex; flex-wrap: wrap; gap: 9px; list-style: none; padding: 0; margin: 14px 0 0; }
 .word-row li {
-  font-family: var(--font-display); font-size: 12px; font-weight: 600;
+  font-family: var(--font-display); font-size: 13px; font-weight: 600;
   letter-spacing: 0.09em; text-transform: uppercase;
   color: var(--teal-deep); background: var(--teal-tint);
-  border-radius: 999px; padding: 6px 13px;
+  border-radius: 999px; padding: 8px 15px;
 }
 
 /* ---------- Doctor journey timeline ---------- */
