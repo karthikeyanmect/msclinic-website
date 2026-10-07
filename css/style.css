@@ -420,8 +420,7 @@ h3 { font-size: 18px; font-weight: 700; letter-spacing: -0.01em; }
   font-size: clamp(24px, 3.6vw, 38px); line-height: 1.55;
   margin: 0 0 16px;
 }
-.kural-l2 { padding-left: 1.4em; }
-.kural-meaning { color: rgba(255, 255, 255, 0.78); font-size: 16.5px; margin: 0 0 10px; }
+.kural-meaning { color: rgba(255, 255, 255, 0.85); font-size: 19px; margin: 0 0 10px; }
 .kural-cite { color: #63D3C4; font-family: var(--font-display); font-weight: 700; font-size: 14.5px; margin: 0; letter-spacing: 0.04em; }
 
 /* ---------- Hero light quote ---------- */
